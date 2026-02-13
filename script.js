@@ -186,6 +186,15 @@ function celebrate() {
     
     // Create heart explosion effect
     createHeartExplosion();
+    // Show memory section after 3 seconds
+    setTimeout(() => {
+        document.getElementById('memorySection').classList.remove('hidden');
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }, 3000);
+
 }
 
 // Create heart explosion animation

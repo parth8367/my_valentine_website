@@ -316,3 +316,50 @@ h2 {
     transform: scale(1.05);
     background: var(--secondary-color);
 } 
+
+/* 💝 Memory Section */
+.memory-section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.memory-title {
+    font-size: 2.5rem;
+    color: #ff4757;
+    margin-bottom: 40px;
+}
+
+.memory-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.memory-item {
+    width: 100%;
+    max-width: 700px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 1s forwards;
+}
+
+.memory-item img,
+.memory-item video {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease;
+}
+
+.memory-item img:hover,
+.memory-item video:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
