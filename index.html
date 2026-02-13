@@ -14,15 +14,15 @@
 
 <body>
 
-    <!-- Floating Background Elements -->
+    <!-- Floating Background -->
     <div class="floating-elements"></div>
 
-    <!-- Main Content Container -->
+    <!-- Main Container -->
     <div class="container">
 
         <h1 id="valentineTitle"></h1>
 
-        <!-- Music Player -->
+        <!-- Music -->
         <div id="musicControls" class="music-controls">
             <button id="musicToggle" class="music-btn">🎵 Play Music</button>
             <audio id="bgMusic" loop>
@@ -31,7 +31,7 @@
             </audio>
         </div>
 
-        <!-- First Question -->
+        <!-- Question 1 -->
         <div class="question-section" id="question1">
             <h2 id="question1Text"></h2>
             <button class="cute-btn" onclick="showNextQuestion(2)" id="yesBtn1"></button>
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <!-- Second Question -->
+        <!-- Question 2 -->
         <div class="question-section hidden" id="question2">
             <h2 id="question2Text"></h2>
 
@@ -60,21 +60,21 @@
             <button class="cute-btn" onclick="showNextQuestion(3)" id="nextBtn"></button>
         </div>
 
-        <!-- Final Question -->
+        <!-- Question 3 -->
         <div class="question-section hidden" id="question3">
             <h2 id="question3Text"></h2>
             <button class="cute-btn final-yes" onclick="celebrate()" id="yesBtn3"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn3"></button>
         </div>
 
-        <!-- Celebration Section -->
+        <!-- Celebration -->
         <div class="celebration hidden" id="celebration">
             <h2 id="celebrationTitle"></h2>
             <p class="celebration-text" id="celebrationMessage"></p>
             <p class="celebration-text" id="celebrationEmojis"></p>
         </div>
 
-        <!-- 💝 Memory Section (NOW CORRECTLY INSIDE CONTAINER) -->
+        <!-- 💝 Memory Section -->
         <div class="memory-section hidden" id="memorySection">
             <h2 class="memory-title">Our Beautiful Memories 💖</h2>
 
@@ -82,26 +82,44 @@
 
                 <div class="memory-item">
                     <img src="assets/photo1.jpeg" alt="Memory 1">
+                    <div class="memory-caption">
+                        🌿 Every adventure with you feels like walking towards forever.
+                    </div>
                 </div>
 
                 <div class="memory-item">
                     <img src="assets/photo2.jpeg" alt="Memory 2">
+                    <div class="memory-caption">
+                        ✨ Your smile lights up my world brighter than any fairy lights ever could.
+                    </div>
                 </div>
 
                 <div class="memory-item">
                     <img src="assets/photo3.jpeg" alt="Memory 3">
+                    <div class="memory-caption">
+                        ☀️ Even under the sun, you outshine everything around you.
+                    </div>
                 </div>
 
                 <div class="memory-item">
                     <img src="assets/photo4.jpeg" alt="Memory 4">
+                    <div class="memory-caption">
+                        🌙 With you, even the simplest evenings turn magical.
+                    </div>
                 </div>
 
                 <div class="memory-item">
                     <img src="assets/photo5.jpeg" alt="Memory 5">
+                    <div class="memory-caption">
+                        🎀 Every celebration feels incomplete without your beautiful presence.
+                    </div>
                 </div>
 
                 <div class="memory-item">
                     <img src="assets/photo6.jpeg" alt="Memory 6">
+                    <div class="memory-caption">
+                        🏰 No matter where we go, home is wherever you are.
+                    </div>
                 </div>
 
             </div>
